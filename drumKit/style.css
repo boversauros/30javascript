@@ -1,0 +1,19 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;    
+}
+
+.drum-set{
+    padding: 10em;
+    margin: auto;  
+    border: 1px solid white;
+    border-radius: 0.5em;
+    background-color: white;
+}
