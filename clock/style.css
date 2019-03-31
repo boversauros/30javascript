@@ -1,0 +1,56 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.title{
+    color: lightcoral;
+}
+
+.panel {
+    padding: 10em;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 10px 10px 23px 0px rgba(53,54,56,0.55);    
+}
+
+.clock {
+    margin-top: 3em;
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+    border: 10px solid #353638;
+    border-radius: 50%;
+    padding: 2rem;
+  }
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background:#353638;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
