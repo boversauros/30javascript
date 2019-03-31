@@ -7,7 +7,12 @@
 .main{
     display: flex;
     height: 100vh;
-    background-color: whitesmoke;    
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.title{
+    color: lightcoral;
 }
 
 .drum-set{
@@ -16,4 +21,35 @@
     border: 1px solid white;
     border-radius: 0.5em;
     background-color: white;
+    box-shadow: 10px 10px 23px 0px rgba(53,54,56,0.55);    
 }
+
+.drum-keys{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+}
+
+.drum-key{
+    border: 1px solid #353638;
+    border-radius: 0.5em;
+    padding: 1.5rem;
+    transition: all .07s ease;
+    margin-left: 0.5em;
+    text-align: center;
+}
+
+.drum-key kbd{
+    font-size: 20px;
+}
+
+.key-name{
+    font-size: 10px; 
+    color: lightcoral;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: lightcoral;
+    box-shadow: 0 0 1rem lightcoral;
+  }
