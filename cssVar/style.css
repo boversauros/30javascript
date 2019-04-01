@@ -1,0 +1,58 @@
+:root{
+    --base: #000;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.title{
+    color: lightcoral;
+}
+
+.panel {
+    padding: 10em;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid white;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 10px 10px 23px 0px rgba(53,54,56,0.55);    
+}
+
+.controls{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.control{
+    margin: 1em;
+}
+
+.control input{
+    margin-left: 0.5em;
+}
+
+#color{
+    border: none;
+}
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
