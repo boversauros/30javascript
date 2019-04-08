@@ -1,9 +1,11 @@
 'use strict'
-
 const inputs = document.querySelectorAll('.controls input')
 
-function handleInput() {
+
+function handleUpdate() {
+    const suffix = this.dataset.sizing || ''
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
 }
 
-inputs.forEach(input => document.addEventListener('change', handleInput))
-inputs.forEach(input => document.addEventListener('mouseover', handleInput))
+inputs.forEach(input => input.addEventListener('change', handleUpdate))
+inputs.forEach(input => input.addEventListener('mousemove', handleUpdate))

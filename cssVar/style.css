@@ -1,5 +1,5 @@
 :root{
-    --base: #000;
+    --color:lightcoral;
     --spacing: 10px;
     --blur: 10px;
 }
@@ -53,6 +53,10 @@
 
 img{
     padding: var(--spacing);
-    background: var(--base);
+    background: var(--color);
     filter: blur(var(--blur));
+}
+
+span{
+    color: var(--color);
 }
